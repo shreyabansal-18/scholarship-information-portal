@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login - ScholarSphere</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+<div class="loader">
+
+    <div class="loader-logo">
+        ScholarSphere
+    </div>
+
+    <div class="spinner"></div>
+
+</div>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+ScholarSphere
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="scholarships.html">Scholarships</a></li>
+<li><a href="profile.html">Profile</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section class="auth-section">
+
+
+<div class="auth-card">
+
+<h1>Welcome Back</h1>
+
+<p>Login to find your scholarships</p>
+
+
+<form onsubmit="loginUser(event)">
+
+<input type="email" id="loginEmail" placeholder="Email Address" required>
+
+<input type="password" id="loginPassword" placeholder="Password" required>
+
+
+<button type="submit">
+Login
+</button>
+
+
+<p>
+Don't have an account?
+<a href="signup.html">
+Create Account
+</a>
+</p>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

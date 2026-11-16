@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Profile - ScholarSphere</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="loader">
+
+<div class="loader-logo">
+ScholarSphere
+</div>
+
+<div class="spinner"></div>
+
+</div>
+
+
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+ScholarSphere
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="scholarships.html">Scholarships</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section class="profile-section">
+
+<div class="profile-card">
+
+<img src="images/profile.png" id="profileImage" class="profile-img">
+
+
+<input type="file" id="imageUpload" accept="image/*">
+
+
+<h1 id="studentName">Student Name</h1>
+
+<p id="studentEmail" class="email">
+student@gmail.com
+</p>
+
+
+<div class="profile-progress">
+
+<h3>Profile Completion</h3>
+
+<div class="progress-bar">
+
+<div id="progress"></div>
+
+</div>
+
+<p>80% Completed</p>
+
+</div>
+
+
+
+<div class="profile-info">
+
+
+<div>
+<h3>🎓 Course</h3>
+<p id="course">B.Tech Information Technology</p>
+</div>
+
+
+<div>
+<h3>🏫 College</h3>
+<p id="college">SKIT Jaipur</p>
+</div>
+
+
+<div>
+<h3>📅 Year</h3>
+<p id="year">1st Year</p>
+</div>
+
+
+<div>
+<h3>👤 Category</h3>
+<p id="category">General</p>
+</div>
+
+
+<div>
+<h3>📍 State</h3>
+<p id="state">Rajasthan</p>
+</div>
+
+
+</div>
+
+
+<button class="edit-btn" onclick="openEdit()">
+Edit Profile
+</button>
+
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+<div class="edit-box" id="editBox">
+
+<div class="edit-card">
+
+<h2>Edit Profile</h2>
+
+<input type="text" id="editName" placeholder="Name">
+
+<input type="email" id="editEmail" placeholder="Email">
+
+<input type="text" id="editCourse" placeholder="Course">
+
+<input type="text" id="editCollege" placeholder="College">
+
+<input type="text" id="editYear" placeholder="Year">
+
+<input type="text" id="editCategory" placeholder="Category">
+
+<input type="text" id="editState" placeholder="State">
+
+
+<button class="save-btn" onclick="saveProfile()">
+Save
+</button>
+
+<button class="close-btn" onclick="closeEdit()">
+Cancel
+</button>
+
+
+</div>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Dashboard - ScholarSphere</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+<div class="loader">
+
+    <div class="loader-logo">
+        ScholarSphere
+    </div>
+
+    <div class="spinner"></div>
+
+</div>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+ScholarSphere
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="scholarships.html">Scholarships</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li>
+    <a href="profile.html">
+        <img src="images/profile.png" class="nav-profile">
+    </a>
+</li>
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section class="dashboard">
+
+
+<h1>Welcome, Student 👋</h1>
+
+<p>Manage your scholarships and profile here.</p>
+
+
+
+<div class="dashboard-container">
+
+<div class="dashboard-card">
+
+<h2>👤 Profile Details</h2>
+
+<p>Name: <span id="dashName"></span></p>
+
+<p>Email: <span id="dashEmail"></span></p>
+
+<p>Course: <span id="dashCourse"></span></p>
+
+<p>College: <span id="dashCollege"></span></p>
+
+<p>Year: <span id="dashYear"></span></p>
+
+<p>Category: <span id="dashCategory"></span></p>
+
+<p>State: <span id="dashState"></span></p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2>👤 Profile Status</h2>
+
+<div class="progress-bar">
+<div class="profile-progress"></div>
+</div>
+
+<p>80% Profile Completed</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2>🎓 Applied Scholarships</h2>
+
+<ul id="appliedList"></ul>
+</div>
+
+<div class="dashboard-card">
+
+<h2>❤️ Saved Scholarships</h2>
+
+<ul id="savedList">
+    <li>Loading saved scholarships...</li>
+</ul>
+
+</div>
+
+
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+}

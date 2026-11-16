@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scholarships - ScholarSphere</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+    <div class="loader">
+
+        <div class="loader-logo">
+            ScholarSphere
+        </div>
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                ScholarSphere
+            </div>
+
+            <ul class="nav-links">
+
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="scholarships.html">Scholarships</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <button id="darkToggle" class="dark-toggle">
+                        🌙
+                    </button>
+                </li>
+                <li><a href="profile.html">Profile</a></li>
+
+                <li>
+                    <a href="profile.html">
+                        <img src="images/profile.png" class="nav-profile">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <section class="all-scholarships">
+
+        <h1>Explore All Scholarships</h1>
+
+        <p>Find scholarships according to your eligibility and category.</p>
+
+
+        <div class="all-search">
+
+            <input type="text" placeholder="Search Scholarship">
+
+            <select>
+                <option>All Categories</option>
+                <option>Government</option>
+                <option>Private</option>
+                <option>Girls Scholarship</option>
+                <option>Engineering</option>
+            </select>
+
+            <button>Search</button>
+
+        </div>
+
+
+        <div class="all-scholarship-container">
+
+
+            <div class="scholarship-card" data-category="girls engineering">
+                <h3>AICTE Pragati Scholarship</h3>
+
+                <p><strong>Category:</strong> Girls / Engineering</p>
+
+                <p><strong>Amount:</strong> Up to ₹50,000</p>
+
+                <p>For female students pursuing technical education.</p>
+
+
+                <a href="#" class="details-btn" onclick="showDetails('AICTE Pragati Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.aicte-india.org" target="_blank" class="apply-btn-new">
+                    Apply Now →
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+            <div class="scholarship-card" data-category="government">
+
+                <h3>National Scholarship Portal (NSP)</h3>
+                <p><strong>Category:</strong> Government</p>
+                <p><strong>Amount:</strong> Financial Assistance</p>
+                <p>Central government scholarships for eligible students.</p>
+                <a href="#" class="details-btn"
+                    onclick="showDetails('National Scholarship Portal (NSP)'); return false;">
+                    View Details
+                </a>
+                <a href="https://scholarships.gov.in" target="_blank" class="apply-btn-new ">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="girls engineering">
+
+                <h3>Deutsche Bank Engineering Scholarship</h3>
+                <p><strong>Category:</strong> Girls / Engineering</p>
+                <p><strong>Amount:</strong> Up to ₹1,00,000 per year</p>
+                <p>Scholarship support for female engineering students with financial need, along with mentorship and
+                    career support.</p>
+
+                <a href="#" class="details-btn"
+                    onclick="showDetails('Deutsche Bank Engineering Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.buddy4study.com/scholarship/deutsche-bank-engineering-scholarship" target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+
+            </div>
+
+            <div class="scholarship-card" data-category="engineering">
+
+                <h3>AICTE Saksham Scholarship</h3>
+                <p><strong>Category:</strong> Engineering</p>
+                <p><strong>Amount:</strong> Up to ₹50,000</p>
+               <p>Financial assistance for specially-abled students pursuing technical diploma or degree courses.</p>
+               <a href="#" class="details-btn"
+   onclick="showDetails('AICTE Saksham Scholarship'); return false;">
+    View Details
+</a>
+                <a href="https://www.aicte-india.org" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+
+            </div>
+
+
+            <div class="scholarship-card" data-category="need">
+                <h3>Tata Capital Pankh Scholarship</h3>
+                <p><strong>Category:</strong> Need Based</p>
+                <p><strong>Amount:</strong> Up to ₹50,000</p>
+                <p>Financial support for higher education students.</p>
+                <a href="#" class="details-btn" onclick="showDetails('Tata Capital Pankh Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.buddy4study.com/article/the-tata-capital-pankh-scholarship" target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="merit need">
+
+                <h3>HDFC Bank Parivartan Scholarship</h3>
+                <p><strong>Category:</strong> Merit / Need Based</p>
+                <p><strong>Amount:</strong> Up to ₹75,000</p>
+                <p>Support for deserving school and college students.</p>
+                <a href="#" class="details-btn"
+                    onclick="showDetails('HDFC Bank Parivartan Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://hdfcscholarship.com/" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+
+
+            <div class="scholarship-card" data-category="girls">
+                <h3>Kotak Kanya Scholarship</h3>
+                <p><strong>Category:</strong> Girls Scholarship</p>
+                <p><strong>Amount:</strong> Up to ₹1,50,000</p>
+                <p>For meritorious female students pursuing higher education.</p>
+                <a href="#" class="details-btn" onclick="showDetails('Kotak Kanya Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.buddy4study.com/page/kotak-kanya-scholarship" target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="merit">
+                <h3>Reliance Foundation Undergraduate Scholarship</h3>
+                <p><strong>Category:</strong> Undergraduate</p>
+                <p><strong>Amount:</strong> Up to ₹2,00,000</p>
+                <p>Scholarship for talented undergraduate students.</p>
+                <a href="#" class="details-btn"
+                    onclick="showDetails('Reliance Foundation Undergraduate Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.buddy4study.com/page/reliance-foundation-scholarships" target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="merit government">
+
+                <h3>LIC Golden Jubilee Scholarship</h3>
+                <p><strong>Category:</strong> Merit Based</p>
+                <p><strong>Amount:</strong> Up to ₹40,000 per year</p>
+                <p>For students with excellent academic performance.</p>
+                <a href="#" class="details-btn" onclick="showDetails('LIC Golden Jubilee Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.buddy4study.com/scholarship/lic-golden-jubilee-scholarship" target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="girls">
+                <h3>Santoor Scholarship</h3>
+                <p><strong>Category:</strong> Girls Scholarship</p>
+                <p><strong>Amount:</strong> Up to ₹60,000 per year</p>
+                <p>Helping female students continue higher education.</p>
+                <a href="#" class="details-btn" onclick="showDetails('Santoor Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.buddy4study.com/page/santoor-scholarship-programme" target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="need">
+                <h3>Mahindra Finance Scholarship</h3>
+                <p><strong>Category:</strong> Need Based</p>
+                <p><strong>Amount:</strong> Up to ₹25,000</p>
+                <p>Support for students facing financial challenges.</p>
+                <a href="#" class="details-btn" onclick="showDetails('Mahindra Finance Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href=" https://saksham.synergieinsights.in/home/Faq " target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="engineering technology">
+
+                <h3>Infosys Scholarship</h3>
+                <p><strong>Category:</strong> Technology</p>
+                <p><strong>Amount:</strong> Financial Assistance (Varies)</p>
+                <p>Scholarship opportunities for talented students.</p>
+                <a href="#" class="details-btn" onclick="showDetails('Infosys Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.buddy4study.com/page/infosys-stem-stars-scholarship" target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="merit">
+
+                <h3>Aditya Birla Scholarship</h3>
+                <p><strong>Category:</strong> Merit Based</p>
+                <p><strong>Amount:</strong> Up to ₹1.75 lakh per year</p>
+                <p>For high-performing students in higher education.</p>
+                <a href="#" class="details-btn" onclick="showDetails('Aditya Birla Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href=" https://www.buddy4study.com/article/aditya-birla-capital-scholarship " target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="engineering medical">
+
+                <h3>Foundation For Excellence Scholarship</h3>
+                <p><strong>Category:</strong> Engineering / Medical</p>
+                <p><strong>Amount:</strong> Up to ₹60,000 per year</p>
+                <p>Helping students pursue professional courses.</p>
+                <a href="#" class="details-btn"
+                    onclick="showDetails('Foundation For Excellence Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href=" https://www.buddy4study.com/article/ffe-scholarship " target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="engineering merit">
+
+                <h3>IET India Scholarship</h3>
+                <p><strong>Category:</strong> Engineering</p>
+                <p><strong>Amount:</strong> Up to ₹3,00,000</p>
+                <p>For outstanding engineering students.</p>
+                <a href="#" class="details-btn" onclick="showDetails('IET India Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href=" https://www.buddy4study.com/page/iet-india-scholarship-award " target="_blank"
+                    class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="private">
+
+                <h3>Vidyasaarathi Scholarship</h3>
+                <p><strong>Category:</strong> Private Scholarship</p>
+                <p><strong>Amount:</strong> Varies</p>
+                <p>Multiple scholarships from corporate organizations.</p>
+                <a href="#" class="details-btn" onclick="showDetails('Vidyasaarathi Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://www.vidyasaarathi.co.in" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+
+            </div>
+
+
+            <div class="scholarship-card" data-category="government">
+
+                <h3>Dr. Ambedkar Scholarship</h3>
+                <p><strong>Category:</strong> Government</p>
+                <p><strong>Amount:</strong> Financial Assistance</p>
+                <p>Support for eligible students under government schemes.</p>
+
+                <a href="#" class="details-btn" onclick="showDetails('Dr. Ambedkar Scholarship'); return false;">
+                    View Details
+                </a>
+                <a href="https://scholarships.gov.in" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="government">
+                <h3>State Government Scholarship</h3>
+                <p><strong>Category:</strong> Government</p>
+                <p><strong>Amount:</strong> Varies</p>
+                <p>Scholarships provided by state governments.</p>
+                <a href="#" class="details-btn"
+   onclick="showDetails('State Government Scholarship'); return false;">
+    View Details
+</a>
+                <a href="https://scholarships.gov.in" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="merit need">
+
+                <h3>Merit Cum Means Scholarship</h3>
+                <p><strong>Category:</strong> Merit / Need Based</p>
+                <p><strong>Amount:</strong> Up to ₹50,000 per year</p>
+                <p>For students with academic merit and financial need.</p>
+                <a href="#" class="details-btn"
+   onclick="showDetails('Merit Cum Means Scholarship'); return false;">
+    View Details
+</a>
+                <a href="https://scholarships.gov.in" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+
+            <div class="scholarship-card" data-category="private merit">
+
+                <h3>College Board India Scholarship</h3>
+                <p><strong>Category:</strong> Student Support</p>
+                <p><strong>Amount:</strong> Financial Assistance</p>
+                <p>Scholarship opportunities for eligible students.</p>
+                <a href="#" class="details-btn"
+   onclick="showDetails('College Board India Scholarship'); return false;">
+    View Details
+</a>
+                <a href="https://www.collegeboard.org" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+            <div class="scholarship-card" data-category="government">
+                <h3>PM Vidyalaxmi Scheme</h3>
+                <p><strong>Category:</strong> Government</p>
+                <p><strong>Amount:</strong> Education Support</p>
+                <p>Financial support scheme for students pursuing higher education.</p>
+               <a href="#" class="details-btn"
+   onclick="showDetails('PM Vidyalaxmi Scheme'); return false;">
+    View Details
+</a>
+                <a href="https://www.education.gov.in" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn" onclick="toggleSave(this)">🤍</button>
+            </div>
+
+            <div class="scholarship-card" data-category="girls engineering">
+                <h3>Women in Engineering Scholarship</h3>
+                <p><strong>Category:</strong> Girls / Engineering</p>
+                <p><strong>Amount:</strong> Financial Assistance</p>
+                <p>Support for female students studying engineering courses.</p>
+                <a href="#" class="details-btn"
+   onclick="showDetails('Women in Engineering Scholarship'); return false;">
+    View Details
+</a>
+                <a href="https://www.smilefoundationindia.org" target="_blank" class="apply-btn-new">
+                    Apply Now
+                </a>
+                <button class="save-btn">🤍</button>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+
+                <h3>ScholarSphere</h3>
+
+                <p>
+                    A scholarship information portal helping students
+                    discover the right opportunities for their education.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="scholarships.html">Scholarships</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: support@scholarsphere.com</p>
+
+                <p>Phone: +91 98765 43210</p>
+
+                <p>India</p>
+
+            </div>
+
+
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <a href="#">Instagram</a>
+
+                <a href="#">LinkedIn</a>
+
+                <a href="#">Twitter</a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ScholarSphere. All Rights Reserved.
+            </p>
+
+        </div>
+
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

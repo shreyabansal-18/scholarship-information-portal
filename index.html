@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarSphere - Scholarship Information Portal</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="loader">
+
+    <div class="loader-logo">
+        ScholarSphere
+    </div>
+
+    <div class="spinner"></div>
+
+</div>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+ScholarSphere
+</div>
+
+<ul class="nav-links">
+
+    
+<li><a href="home.html">Home</a></li>
+
+<li><a href="scholarships.html">Scholarships</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li>
+<button id="darkToggle" class="dark-toggle">
+🌙
+</button>
+</li> 
+
+<li><a href="profile.html">Profile</a></li>
+
+<li>
+    <a href="profile.html">
+        <img src="images/profile.png" id="navProfileImage" class="nav-profile">
+    </a>
+</li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" data-aos="fade-up">
+
+<div class="hero-text">
+
+<h1>
+Find Your Dream Scholarship
+</h1>
+
+<p>
+Discover scholarships based on your education, category and financial background.
+</p>
+
+<a href="scholarships.html" class="btn">
+    📚Discover Scholarship
+</a>
+</div>
+
+<div class="hero-image">
+
+<img src="images/student.png" alt="Student">
+
+</div>
+
+
+
+  </section>
+
+<!-- Search Section --> 
+
+<section class="search-section" data-aos="fade-up">
+<h2>Find Your Perfect Scholarship</h2>
+
+<div class="search-box home-search">
+
+<input id="homeSearchInput" type="text" placeholder="Search Scholarship">
+
+<select id="categoryFilter">
+
+<option value="all">Select Category</option>
+
+<option value="merit">Merit Based</option>
+
+<option value="need">Need Based</option>
+
+<option value="girls">Girls Scholarship</option>
+
+<option value="engineering">Engineering</option>
+
+<option value="medical">Medical</option>
+
+<option value="sports">Sports</option>
+
+<option value="government">Government</option>
+
+<option value="private">Private</option>
+
+</select>
+
+<select>
+<option>Select State</option>
+<option>Rajasthan</option>
+<option>Delhi</option>
+<option>Punjab</option>
+<option>Maharashtra</option>
+<option>Gujarat</option>
+</select>
+
+<button>Search</button>
+
+</div>
+
+</section>
+
+<!-- Scholarship Categories -->
+
+<section class="categories" data-aos="zoom-in">
+<h2>Scholarship Categories</h2>
+
+<div class="category-container">
+
+<div class="category-card">
+<h3>🎓 Merit Based</h3>
+<p>Scholarships for outstanding academic performance.</p>
+</div>
+
+<div class="category-card">
+<h3>💰 Need Based</h3>
+<p>Financial assistance for deserving students.</p>
+</div>
+
+<div class="category-card">
+<h3>👩 Girls Scholarship</h3>
+<p>Special scholarships for female students.</p>
+</div>
+
+<div class="category-card">
+<h3>💻 Engineering</h3>
+<p>Scholarships for B.Tech students.</p>
+</div>
+
+<div class="category-card">
+<h3>🏥 Medical</h3>
+<p>Support for medical students.</p>
+</div>
+
+<div class="category-card">
+<h3>⚽ Sports</h3>
+<p>Scholarships for sportspersons.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Featured Scholarships -->
+
+<section class="featured" data-aos="fade-right">
+<h2>Featured Scholarships</h2>
+
+<div class="scholarship-container">
+
+<div class="scholarship-card">
+<h3>National Merit Scholarship</h3>
+<p><strong>Amount:</strong> ₹50,000</p>
+<p><strong>Deadline:</strong> 15 September 2026</p>
+<p><strong>Eligibility:</strong> 12th Pass</p>
+<button>View Details</button>
+</div>
+
+<div class="scholarship-card">
+<h3>AICTE Pragati Scholarship</h3>
+<p><strong>Amount:</strong> ₹50,000</p>
+<p><strong>Deadline:</strong> 31 October 2026</p>
+<p><strong>Eligibility:</strong> Girls in Technical Courses</p>
+<button>View Details</button>
+</div>
+
+<div class="scholarship-card">
+<h3>Reliance Foundation Scholarship</h3>
+<p><strong>Amount:</strong> ₹2,00,000</p>
+<p><strong>Deadline:</strong> 06 October 2026</p>
+<p><strong>Eligibility:</strong> UG Students</p>
+<button>View Details</button>
+</div>
+
+<div class="scholarship-card">
+<h3>Tata Capital Pankh Scholarship</h3>
+<p><strong>Amount:</strong> Up to ₹50,000</p>
+<p><strong>Deadline:</strong> 15 November 2026</p>
+<p><strong>Eligibility:</strong> UG Students with financial need</p>
+<button>View Details</button>
+</div>
+
+
+<div class="scholarship-card">
+<h3>HDFC Bank Parivartan Scholarship</h3>
+<p><strong>Amount:</strong> Up to ₹75,000</p>
+<p><strong>Deadline:</strong> 30 September 2026</p>
+<p><strong>Eligibility:</strong> School & College Students</p>
+<button>View Details</button>
+</div>
+
+
+<div class="scholarship-card">
+<h3>Kotak Kanya Scholarship</h3>
+<p><strong>Amount:</strong> Up to ₹1,50,000</p>
+<p><strong>Deadline:</strong> 31 October 2026</p>
+<p><strong>Eligibility:</strong> Female students pursuing higher education</p>
+<button>View Details</button>
+</div>
+
+
+
+<a href="scholarships.html" class="view-btn">
+    View All Scholarships →
+</a>
+
+
+
+</div>
+
+</section>
+<!-- Why Choose Us -->
+
+<section class="why-us" data-aos="fade-left">
+
+<h2>Why Choose ScholarSphere?</h2>
+
+<div class="why-container">
+
+<div class="why-card">
+<h3>🎯 Verified Scholarships</h3>
+<p>Explore trusted scholarships from government and private organizations.</p>
+</div>
+
+<div class="why-card">
+<h3>⚡ Easy Search</h3>
+<p>Quickly find scholarships using smart filters and categories.</p>
+</div>
+
+<div class="why-card">
+<h3>🔒 Secure Platform</h3>
+<p>Your information stays safe with a secure and reliable platform.</p>
+</div>
+
+<div class="why-card">
+<h3>🌍 Free Access</h3>
+<p>Browse scholarships and resources without any charges.</p>
+</div>
+
+</div>
+
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<!-- Statistics Section -->
+
+<section class="stats" data-aos="zoom-in">
+
+    <h2>Our Impact</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h1>10,000+</h1>
+            <p>Scholarships</p>
+        </div>
+
+        <div class="stat-card">
+            <h1>50,000+</h1>
+            <p>Students Helped</p>
+        </div>
+
+        <div class="stat-card">
+            <h1>500+</h1>
+            <p>Partner Organizations</p>
+        </div>
+
+        <div class="stat-card">
+            <h1>98%</h1>
+            <p>User Satisfaction</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+
+<div class="footer-box">
+
+<h3>ScholarSphere</h3>
+
+<p>
+A scholarship information portal helping students
+discover the right opportunities for their education.
+</p>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+
+<a href="scholarships.html">Scholarships</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Contact Us</h3>
+
+<p>Email: support@scholarsphere.com</p>
+
+<p>Phone: +91 98765 43210</p>
+
+<p>India</p>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Follow Us</h3>
+
+<a href="#">Instagram</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">Twitter</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>
+© 2026 ScholarSphere. All Rights Reserved.
+</p>
+
+</div>
+
+
+</footer>
+</body>
+</html>
+
